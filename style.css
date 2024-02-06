@@ -1,0 +1,102 @@
+*{
+
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 101, 101);
+}
+
+
+
+
+
+.container{
+    max-width: 300px;
+    width: 100%;
+    padding: 5px 10px 10px;
+    border-radius: 12px;
+    background-color: rgb(63, 236, 15);
+    
+}
+
+
+
+
+
+.display{
+   height: 100px;
+   width: 100%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: none;
+   outline: none;
+   text-align: right;
+   font-size: 35px;
+   color: rgb(33, 159, 213);
+   pointer-events: none;
+}
+
+
+
+
+
+.buttons{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+
+.buttons :active{
+    transform: scale(0.99);
+}
+
+
+
+
+button{
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    padding: 10%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+
+
+button:hover {
+    background-color: rgb(70, 228, 228);
+    
+}
+
+
+
+
+button.operator{
+    color: rgb(21, 152, 108);
+}
+
+
+
+
+button.sd{ 
+    background-color: rgb(203, 211, 208);
+}
